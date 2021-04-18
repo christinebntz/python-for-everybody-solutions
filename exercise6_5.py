@@ -11,9 +11,9 @@ into a floating number.
 Python for Everybody: Exploring Data Using Python 3
 by Charles R. Severance
 """
-string = 'X-DSPAM-Confidence: 0.8475'
+str = 'X-DSPAM-Confidence: 0.8475'
 
-col_pos = string.find(':')                  # Finds the colon character
-number = string[col_pos + 1:]                 # Extracts portion after colon
-confidence = float(number)                  # Converts to floating point number
+pos = str.find(':')                  # Finds the colon character
+num = str[pos + 1:]                 # Extracts portion after colon
+confidence = float(num)                  # Converts to floating point number
 print(confidence)
